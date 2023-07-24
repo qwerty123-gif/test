@@ -1,0 +1,170 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+.logo{
+  width: 140px;
+  height: 50px;
+  margin-left: -80px;
+  margin-top: -10px;
+}
+.navigation .ac{
+  position:relative;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  font-weight: 550;
+  margin-left: 40px;
+}
+.navigation .ac::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+.navigation .ac:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navigation{
+  top:0;
+  left:0;
+  width:100%;
+  padding:20px 100px;
+  justify-content:space-between;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  background-color: #F5F6F6;
+}
+.navigation .dangnhap{
+  width:130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: black;
+  font-weight: 550;
+  margin-left: 40px;
+  transition: .5s;
+  text-align: center;
+  padding-top: 12px;
+  text-decoration: none;
+  margin-right: -80px;
+}
+.navigation .dangnhap:hover{
+  background-color: black;
+  color: #fff;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;   
+  background-color: #F5F6F6;
+  width: 1263px;
+  height: 230px;
+}
+.ttcd{
+  font-weight: bolder;
+  color: black;
+  padding-bottom: 30px;
+}
+.ttcdntht{
+  font-weight: bolder;
+  color: black;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+.tt{
+  color: grey;
+  margin-top: 5px;
+}
+.footer1{
+  text-align: center;
+}
+.ntht{
+  max-width: 200px;
+  height: auto;
+  margin-top: -30px;
+}
+body{
+    background-image: linear-gradient(to top right, #8B5CF6, #EC4899);
+    min-height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.slider{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+    font-family: monospace;
+}
+.item{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    transition:  0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+#next{
+    position: absolute;
+    right: 50px;
+    top: 40%;
+}
+#prev{
+    position: absolute;
+    left: 50px;
+    top: 40%;
+}
+#prev, #next{
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+#prev:hover,
+#next:hover{
+    opacity: 1;
+}
+h1{
+    font-weight: bolder;
+    font-size: larger;
+}
